@@ -1,0 +1,47 @@
+body {
+    background-color: #2e2e2e;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+nav {
+    text-align: center;
+}
+
+.manual {
+    padding: 10px;
+    margin: 20px;
+}
+
+.nav-link {
+    border: lightgray;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a.nav-link:link
+{
+   color: black;
+   font: bold;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: indigo;
+   font: bold;
+   text-decoration: none;
+}
