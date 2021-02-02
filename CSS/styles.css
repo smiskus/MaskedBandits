@@ -47,3 +47,11 @@ a.nav-link:visited
    font: bold;
    text-decoration: none;
 }
+
+a.hyperlink:link{
+    color: lightskyblue;
+}
+
+a.hyperlink:visited {
+    color: lightslategray;
+}
