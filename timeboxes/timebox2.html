@@ -61,15 +61,38 @@
             <li>Desert Exhibit: Elephant (moves objects), Fire Salamander (spits fire), Scorpion (places a block), Desert Hare(jumps high)</li>
             <li>Polar Exhibit: Polar Bear (moves objects), Reindeer (fly for a short duration), Penguin (throw snowballs), Wolf (attack)</li>
         </ul>
+        <div class="panel">
+            <video height="300px" controls>
+                <source src="../video/safarianimals.mp4" type="video/mp4">
+            </video> 
+            <video height="300px" controls>
+                <source src="../video/desertanimals.mp4" type="video/mp4">
+            </video> 
+            <video height="300px" controls>
+                <source src="../video/polaranimals.mp4" type="video/mp4">
+            </video> 
+        </div>
         <p>Additionally, we fixed it so that animals can no longer climb up steep terrain slopes and instead slide down them without the ability to jump.</p>
+        <div class="panel">
+            <video height="300px" controls>
+                <source src="../video/sliding.mp4" type="video/mp4">
+            </video> 
+        </div>
 
         <h3>Giraffe Level</h3>
-        <p>We broke up the Giraffe Level into five different sections for people to work on. The first section is based around platforming, the second on a platform puzzle to get across the lake, the third a giraffe lever puzzle, the fourth a safe puzzle, and the fifth another platform area.</p>
+        <p>We broke up the Giraffe Level into five different sections for people to work on. The first section is based around platforming, the second on a platform puzzle to get across the lake, the third a giraffe lever puzzle, the fourth another platform area, and the fifth a puzzle area.</p>
         <div class="panel">
             <img height="300px" src="../img/timebox2/section1_design.PNG">
             <img height="300px" src="../img/timebox2/section2.PNG">
             <img height="300px" src="../img/timebox2/section3.PNG">
         </div>
+        <p>Above are the first three sections in order. To get across the lake, the raccoon jumps on lily pads that will trigger more lily pads to rise. There is a specific order in which the raccoon must jump on the lily pads for the correct path to appear. For the third section, the player must use the giraffe in order to interact with the levers. Pulling the levers rises and lowers the platforms to the left at different rates, and the objective is to get them in the correct position so the raccoon can jump on them.</p>
+        <div class="panel">
+            <img height="300px" src="../img/timebox2/warehouse.png">
+            <img height="300px" src="../img/timebox2/office.png">
+            <img height="300px" src="../img/timebox2/word_puzzle.png">
+        </div>
+        <p>Above are the fourth and fifth sections in order. The fourth section is a warehouse platform where you try to get to the door on the other side. The fifth is an office where you are trying to get the key in order to help the giraffe escape. The key is located in the safe, and there is a riddle that can be found in the trashcan that will open the safe. The answer to the riddle is a five letter word.</p>
 
         <h3>Zebra Level</h3>
         <p>We also implemented the beginning of the Zebra Level, which is primarily a platform area. For each group of platforms, the player needs to complete a puzzle in order to raise them. The platforms will lower after a specified amount of time, which means that the player needs to quickly get across them.</p>
@@ -79,8 +102,23 @@
                 <source src="../video/ZebraLevelDemo.mp4" type="video/mp4">
             </video> 
         </div> 
+
+        <h3>Penguin Level</h3>
+        <p>Additionally, we implemented the penguin level which is based around the penguin's ability to throw snowballs and affect the course of motion when standing on an iceberg. To complete the level, you must hit all twelve spheres that are scattered throughout the level.</p>
+        <div class="panel">
+            <video height="300px" controls>
+                <source src="../video/penguinlevel.mp4" type="video/mp4">
+            </video>
+            <video height="300px" controls>
+                <source src="../video/penguinlevel2.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <h3>Saving, Loading, and Pausing Games</h3>
         <p>We were able to implement the saving and loading of games using local saved files and creating a GameManager class. Additionally, these tied into the placement of checkpoints throughout the levels which would save the player's position if they were to die. We also added a pause menu that the player will be able to access at any point in the game.</p>
+        <div class="panel">
+            <img height="300px" src="../img/timebox2/savemenu.png">
+        </div>
 
         <h3>AI NPC</h3>
         <p>We started looking into how to implement AI enemies and began with developing the AI for passive animals.</p>
@@ -111,8 +149,8 @@
             <li>Alex Chan: Animal Abilities/Level Design</li>
             <li>Von Mbah: Puzzles/UI Screens/AI</li>
             <li>Sara Miskus: Level Design</li>
-            <li>Eric Sullivan: Saving/Checkpoints/Particle Systems</li>
-            <li>Jack Weiner: Level Design/Puzzles</li>
+            <li>Eric Sullivan: Saving & Checkpoints/Particle Systems</li>
+            <li>Jack Weiner: Level Design/Puzzles/Scrummaster</li>
         </ul>
 
         <h2>Future Plans</h2>
