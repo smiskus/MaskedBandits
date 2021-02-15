@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masked Bandits</title>
     <link rel="stylesheet" href="../CSS/styles.css">
+    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 </head>
 <body>
     <header>
@@ -20,8 +21,14 @@
     </header>
     <div class="manual">   
         <h2>Summary</h2>
+
         <p>In Timebox Two, we refined our game concept by deciding on the amount of levels, exhibits, and animals we wanted to implement. We cleaned up the tutorial level and worked on two other levels for the Safari Exhibit. We also brainstormed a few other puzzles that could be implemented throughout the game. Additionally, we worked on handling saving and loading games, beginning AI movement, and refactoring code.</p>
+
         <h2>Concept Ideas and Design</h2>
+
+        <h3>Game Concept Refinement</h3>
+        <p>Our game concept evolved from our first timebox. We decided to have four exhibits--Safari, Desert, Ice/Tundra, and Jungle. Each exhibit would have four levels to it, and four corresponding animals with special abilities. Animals would only be available to link in the level that they are in. So for example, the Safari exhibit would have a Giraffe Level, a Zebra Level, a Hippo Level, and a Lion Level. We also want to develop the game so that the player must complete the Safari exhibit first in order to unlock the rest of the zoo.</p>
+
         <h3>Puzzles</h3>
         <p>We brainstormed potential puzzle ideas that we could implement for future levels. This included: </p>
         <ul>
@@ -36,11 +43,87 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/T18e-GRbFTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <img src="../img/timebox2/hippo_puzzle.PNG" height="250px">
         </div>
+
+        <h3>Level Design</h3>
+        <p>Below are some sketches for the Level Select Zoo area, the office area in the Giraffe Level, and the Zebra Level:</p>
+        <div class="panel">
+            <img src="../img/timebox2/levelselect.jpg" height="300px">
+            <img src="../img/timebox2/office.jpg" height="300px">
+            <img src="../img/timebox2/zebra_level.jpg" height="300px">
+        </div>
+
         <h2>What We Accomplished</h2>
-        <h2>Zebra Level Demo</h2>
-        <video height="300px" controls>
-            <source src="../video/ZebraLevelDemo.mp4" type="video/mp4">
-        </video>     
+
+        <h3>Animal Abilities</h3>
+        <p>We worked on choosing which animals we wanted to have in each exhibit as well as they're abilities. There are four focus areas for animals--rigidbody physics, movement based, unique ability, and attacking.</p>
+        <ul>
+            <li>Safari Exhibit: Hippo (moves objects), Zebra (dash ability), Giraffe (interact with tall objects), Lion (attack)</li>
+            <li>Desert Exhibit: Elephant (moves objects), Fire Salamander (spits fire), Scorpion (places a block), Desert Hare(jumps high)</li>
+            <li>Polar Exhibit: Polar Bear (moves objects), Reindeer (fly for a short duration), Penguin (throw snowballs), Wolf (attack)</li>
+        </ul>
+        <p>Additionally, we fixed it so that animals can no longer climb up steep terrain slopes and instead slide down them without the ability to jump.</p>
+
+        <h3>Giraffe Level</h3>
+        <p>We broke up the Giraffe Level into five different sections for people to work on. The first section is based around platforming, the second on a platform puzzle to get across the lake, the third a giraffe lever puzzle, the fourth a safe puzzle, and the fifth another platform area.</p>
+        <div class="panel">
+            <img height="300px" src="../img/timebox2/section1_design.PNG">
+            <img height="300px" src="../img/timebox2/section2.PNG">
+            <img height="300px" src="../img/timebox2/section3.PNG">
+        </div>
+
+        <h3>Zebra Level</h3>
+        <p>We also implemented the beginning of the Zebra Level, which is primarily a platform area. For each group of platforms, the player needs to complete a puzzle in order to raise them. The platforms will lower after a specified amount of time, which means that the player needs to quickly get across them.</p>
+        <div class="panel">
+            <img height="300px" src="../img/timebox2/ZebraLevel2.PNG">
+            <video height="300px" controls>
+                <source src="../video/ZebraLevelDemo.mp4" type="video/mp4">
+            </video> 
+        </div> 
+        <h3>Saving, Loading, and Pausing Games</h3>
+        <p>We were able to implement the saving and loading of games using local saved files and creating a GameManager class. Additionally, these tied into the placement of checkpoints throughout the levels which would save the player's position if they were to die. We also added a pause menu that the player will be able to access at any point in the game.</p>
+
+        <h3>AI NPC</h3>
+        <p>We started looking into how to implement AI enemies and began with developing the AI for passive animals.</p>
+        <div class="panel">
+            <blockquote class="imgur-embed-pub" lang="en" data-id="8EzuE0d" data-context="false" ><a href="//imgur.com/8EzuE0d"></a></blockquote>
+        </div>
+
+        <h2>Roadblocks</h2>
+        <ul>
+            <li>
+                We had some issues with git lfs and had to pay for an upgraded account for more storage. 
+            </li>
+            <li>
+                We also had some general git problems when trying to switch between branches. 
+            </li>
+            <li>
+                Initially we ran into some problems with the animal rigid body.
+            </li>
+            <li>
+                Scaling the camera and player movement to fit the terrain became tricky.
+            </li>
+        </ul>
+
+        <h2>Team Organization</h2>
+        <p>We continued using the tools from Timebox One which included Github, Zenhub, and Discord. Our roles this timebox were the following: </p>
+        <ul>
+            <li>Maddy Carek: Level Design/Puzzles</li>
+            <li>Alex Chan: Animal Abilities/Level Design</li>
+            <li>Von Mbah: Puzzles/UI Screens/AI</li>
+            <li>Sara Miskus: Level Design</li>
+            <li>Eric Sullivan: Saving/Checkpoints/Particle Systems</li>
+            <li>Jack Weiner: Level Design/Puzzles</li>
+        </ul>
+
+        <h2>Future Plans</h2>
+        <ul>
+            <li>Finish functionality of Zebra exhibit</li>
+            <li>Finish design and functionality for remaining safari exhibits</li>
+            <li>AI enemies/combat</li>
+            <li>Planning details for future exhibits</li>
+            <li>Starting Player UI</li>
+            <li>Look into Photon Networking</li>
+        </ul>
     </div>
 </body>
 </html>
