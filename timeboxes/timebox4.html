@@ -8,16 +8,116 @@
 </head>
 <body>
     <header>
-        <h1>Timebox Four | March 16th, 2021</h1>
-        <br>
+        <h1>Timebox Four | March 22nd, 2021</h1>
+        <p>Maddy Carek, Alex Chan, Von Mbah, Sara Miskus, Eric Sullivan, Jack Weiner</p>
         <nav>    
             <a href="../" class="nav-link">Home</a>
-            <a href="timebox1.html" class="nav-link">Timebox Five</a> 
+            <a href="timebox5.html" class="nav-link">Timebox Five</a> 
         </nav>
         <br>
         <hr>
     </header>
-    <div>        
+    <div class="manual">
+        <h2>Summary</h2>
+        <p>For Timebox Four, one of the biggest priorities was refining our current levels and puzzles by adding more UI indicators, particle effects, fixing any bugs, and implementing different cameras. We also wanted to finish up the remaining levels for the Safari, Polar, and Desert exhibits. We also started planning out the animals for the Jungle Exhibit.</p>
+
+        <h2>Concept Ideas and Design</h2>
+        <p>Below are some concept ideas from designing the lion/cave level, how to refine the level select area, and the design for the scorpion level.</p>
+        <div class="panel">
+            <img src="../img/timebox4/CaveLevel.jpg" height="500px">
+            <img src="../img/timebox4/levelselect.jpg" height="500px">
+            <img src="../img/timebox4/ScorpionLevel.jpg" height="500px">
+        </div>
+
+        <h2>What We Accomplished</h2>
+        <h3>Reindeer Level</h3>
+        <p>The reindeer level is an open level where you must find all twenty-five puzzle pieces in order to escape. The twenty-five puzzle pieces are scattered around the map, and you're able to use the reindeer's special ability of flying in order to reach high places. Once you find all the pieces, you must solve the jigsaw puzzle.</p>
+        <div class="panel">
+            <img src="../img/timebox4/jigsawpuzzle.PNG" height="250px">
+        </div>
+
+        <h3>Scorpion Level</h3>
+        <p>The scorpion level is a stealth based level where you try to avoid the spotlights. If you are in the direct beam of a spotlight, then you get reset to the last checkpoint. To avoid spotlights, you can hide under bridges or run away from the moving light. In this level, you can use the scorpion to place a block to help aid jumps.</p>
+        <div class="panel">
+            <img src="../img/timebox4/ScorpionLevel.PNG" height="400px">
+        </div>
+
+        <h3>Wolf Level</h3>
+        <p>The wolf level is based around combat as you climb up a mountain and defeat ghosts. You are able to switch to the wolf which has the special ability of summoning a pack of wolves to attack the closest enemy. Once you reach the top of the mountain, you'll be able to escape.</p>
+        <div class="panel">
+            <img src="../img/timebox4/WolfLevel.png">
+        </div>
+
+        <h3>Lion/Cave Level</h3>
+        <p>The lion level is also based around combat as you go through three different sections to reach the cave at the end. You must defeat all the enemies in each section before you can move on. In order to lower the gate in each section, you complete the minefield puzzle. Once you are in the cave, you will use all of the safari animals and their special abilities to defeat the evil lion.</p>
+        <div class="panel">
+            <img src="../img/timebox4/LionLevel.png" height="300px">
+            <img src="../img/timebox4/cavelevel_lava.png" height="300px">
+        </div>
+
+        <h3>Jungle Animals</h3>
+        <p>We implemented the last three animals for our game which are:</p>
+        <ul>
+            <li>Gorilla: Grapple hook shot ability</li>
+            <li>Viper: Speed boost ability</li>
+            <li>Crocodile: Mud shot ability</li>
+        </ul>
+
+        <h3>Camera Adjustments</h3>
+        <p>For each level, we created custom cameras that would change based on the animal you were playing as. We also implemented static cameras for certain puzzles such as the ones in the elephant level. We also worked on camera pans and transitions after a certain event had been triggered.</p>
+
+        <h3>Level Refinements</h3>
+        <p>The following levels were refined:</p>
+        <ul>
+            <li>Level Select Zoo Area</li>
+            <li>Polar Bear Level</li>
+            <li>Penguin Level</li>
+            <li>Desert Slide Level</li>
+            <li>Elephant Level</li>
+            <li>Desert Hare Level</li>
+        </ul>
+
+        <h3>Puzzle Refinements</h3>
+        <p>The following puzzles were refined:</p>
+        <ul>
+            <li>Mastermind: Added shapes to differentiate each color</li>
+            <li>Lights Out: Added animals to differentiate each color</li>
+        </ul>
+        <div class="panel">
+            <img src="../img/timebox4/mastermind_refinement.png">
+            <img src="../img/timebox4/LightsOut2.PNG">
+        </div>
+
+        <h3>Combat Refinements</h3>
+        <p>We made improvements to combat including:</p>
+        <ul>
+            <li>Auto-targeting: Player will face towards a close enemy when attacking</li>
+            <li>A stun for a long perion when the lion special is activated</li>
+            <li>Bug fix where enemies and player have negative health</li>
+            <li>Player has death animation and respawn upon reaching zero health</li>
+            <li>Enemies will ignore colliders of player and each other</li>
+            <li>Enemies have a changeable aggro distance for different levels</li>
+            <li>New ghost enemies added</li>
+        </ul>
+        <div class="panel">
+            <img src="../img/timebox4/combat.png">
+        </div>
+
+        <h2>Team Organization</h2>
+        <p>The roles during this timebox were the following:</p>
+        <ul>
+            <li>Maddy Carek: Reindeer Level Design & Level Refinement</li>
+            <li>Alex Chan: Level Refinement & Jungle Animals</li>
+            <li>Von Mbah: Lion/Cave Level</li>
+            <li>Sara Miskus: Level Refinement & Scoprion Level Design</li>
+            <li>Eric Sullivan: Wolf Level & Combat Refinement</li>
+            <li>Jack Weiner: Level Refinement & Cameras</li>
+        </ul>
+        <h3>Future Plans</h3>
+        <ul>
+            <li>Implement jungle levels</li>
+            <li>Further level refinement</li>
+        </ul>
     </div>
 </body>
 </html>
