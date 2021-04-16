@@ -9,7 +9,7 @@
 <body>
     <header>
         <img src="img/raccoon.png" height="100px">
-        <h1>Masked Bandits Timebox Diary & Game Manual</h1>
+        <h1>Masked Bandits Timebox Diary & Game Play Manual</h1>
         <h2>CSE 5912 SP21 | Team 4</h2>
         <p>Maddy Carek, Alex Chan, Von Mbah, Sara Miskus, Eric Sullivan, Jack Weiner</p>
         <br>
@@ -27,61 +27,62 @@
         <h1>Back to the Wild Game Manual</h1>
         <h2>1. Overview</h2>
         <p>
-            Back to the Wild is a 3D platformer game set in a zoo in which you start off taking control of a raccoon who decides to rescue the animals within the zoo. The player must solve puzzles and maneuver around different animal's exhibits in order to help the animals escape. The player can link up with animals in a specific level in order to use their special abilities.
+            Back to the Wild is a 3D platform/puzzle game set in a zoo. You start off by taking control of a raccoon who decides to rescue the other animals within the zoo. The player must solve puzzles and maneuver around different animal exhibits in order to help the animals escape. The player can link up with animals in a specific level in order to use their special abilities.
         </p>
         <h2>2. Gameplay</h2>
-        <h3>Game Controls</h3>
+        <img src="img/Controls.png" class="center">
         <ul>
             <li>WASD: Move forward, left, down, and right respectively</li>
             <li>Spacebar: Jump</li>
             <li>E: The animal's special ability</li>
             <li>L: Link with another animal</li>
-            <li>0, 1, 2, 3: Switch between different animals after you have linked up with them</li>
+            <li>0, 1, 2, 3, 4: Switch between different animals after you have linked up with them</li>
+            <li>Left click: Attack</li>
+            <li>Esc: Pause game</li>
             <li>I: Take an in game screenshot</li>
             <li>P: Start recording game play, press again to stop</li>           
         </ul>
-        <h3>Game Mechanics</h3>
-        <ul>
-            <li>The player can switch between different animals that have different abilities</li>
-            <li>The default character is the raccoon, which can interact with puzzles requiring hands</li>
-            <li>The objective is to get keys and help other animals escape</li>
-            <li>This would be a 3rd person, over the shoulder game unless you are solving a 2D puzzle</li>
-            <li>Trash cans are save points throughout the level and the player can also obtain points by finding candy bars/food from trash bins</li>
-        </ul>
-        <h3>Puzzles</h3>
-        <ul>
-            <li>A wire puzzle that would trigger certain objects to move or open like a draw bridge</li>
-            <li>A lever puzzle to raise and lower platforms to the correct height</li>
-            <li>A box puzzle where the player would have to push around boxes in order to reach certain areas</li>
-            <li>A laser puzzle where you have the align the mirrors correctly</li>
-            <li>A keypad puzzle where you have to find the code</li>
-            <li>A pressure plate puzzle where certain animals such as an elephant would need to stand in place for doors to open</li>
-        </ul>
+        <h3>Starting a New Game</h3>
+        <p>The player will start a new game in the tutorial level where they will lower a bridge that will lead to the level select area. Once in the level select area, the player is able to choose a level from the four exhibits: Safari, Desert, Polar, and Jungle. Each exhibit has four levels to complete. The final level is the last level in the Jungle exhibit where the player will use all animals from the previous exhibits. After completing all levels and the final level, the player will beat the game.</p>
+        <h3>Saving a Game</h3>
+        <p>To save a game, you must hit "ESC" and then click on "Save Game". You will be prompted to save your game in a specific save spot. When saving a game, all levels that you have completed will be saved.</p>
+        <h3>Linking up with Animals</h3>
+        <p>In each level, there can be one to several animals the player can link up with. To link up with these animals, the player must go next to them and hit "L". In the top right corner of the screen, the player can see which number key corresponds to the animal to switch to. If the animal is grayed out, then the animal has not been linked up with yet. The special abilities of each animal are listed in the character section below.</p>
+        <h3>Interacting with Objects</h3>
+        <p>To interact with puzzle boxes and other various items, the player will have to switch to the raccoon by pressing "0" and then use "E" to interact. These interactive items are usually indicated by green particle effects. Throughout the game, there are 2D puzzles that the player will need to complete in order to proceed through the level. Instructions for these puzzles will be provided when the user enters the puzzle.</p>
+        <h3>Combat</h3>
+        <p>For combat levels, a red health bar will appear at the top of the screen. Enemies will have a red health bar above them to indiciate how much health they have left. The player can attack using left click as well as any special abilities specific combat animals have. These attacks will do a variety of damage to the enemy. The enemy can also do damage to the player, and if the player dies, then they will have the restart from the last saved checkpoint.</p>
         <h2>3. Characters</h2>
+        <p>There are a total of sixteen different animals that the player will link up with throughout the game. Each animal has it's own special abilities. Most of these abilities can be activiated by pressing E, but some animals have additional special abilities. All abilities are listed below:</p>
         <ul>
-            <li>Raccoon: Main character of the game. Is able to jump, move around, and solve puzzles that require hands. Will be available to use in all levels.</li>
+            <li>Raccoon: Main character of the game. Is able to jump, move around, and interact with objects using E. Will be available to use in all levels.</li>
             <li>Safari Animals</li>
             <ul>
-                <li>Giraffe: Can reach and interact with tall objects.</li>
-                <li>Zebra: Can dash allowing it to reach platforms that are out of reach for the raccoon.</li>
+                <li>Giraffe: Can reach and interact with tall objects by pressing E</li>
+                <li>Zebra: Can dash by pressing E. No cool down.</li>
                 <li>Hippo: Can move objects as well as activate pressure plates.</li>
-                <li>Lion: Can attack enemies.</li>
+                <li>Lion: Can attack enemies by pressing left click and also can stun enemies by pressing E.</li>
             </ul>
             <li>Desert Animals</li>
             <ul>
-                <li>Scorpion: Can place a single block that can be used to jump to higher places.</li>
-                <li>Desert Hare: Can jump higher than other animals.</li>
+                <li>Scorpion: Can place a single block by pressing E.</li>
+                <li>Desert Hare: Can double jump as well as super jump by pressing E.</li>
                 <li>Elephant: Can move objects as well as activate pressure plates.</li>
-                <li>Fire Salamander: Can spit fire.</li>
+                <li>Fire Salamander: Can spit fire by pressing E and easily maneuver steep inclines.</li>
             </ul>
             <li>Polar Animals</li>
             <ul>
-                <li>Penguin: Can throw snowballs.</li>
-                <li>Polar Bear: Can move objects as well as activate pressure plates.</li>
-                <li>Reindeer: Can fly for a short duration.</li>
-                <li>Wolf: Can attack enemies.</li>
+                <li>Penguin: Can throw snowballs by pressing E and steer icebergs.</li>
+                <li>Polar Bear: Can move objects as well as activate pressure plates. Also can spawn an ice block by pressing E.</li>
+                <li>Reindeer: Can fly for a short duration by pressing E. There is a cool down for this ability.</li>
+                <li>Wolf: Can attack enemies by pressing left click and also can summon a pack of wolves by pressing E.</li>
             </ul>
             <li>Jungle Animals</li>
+            <ul>
+                <li>Gorilla: Can grapple by pressing E to go into first person mode and holding left click to grapple.</li>
+                <li>Crocodile: Can attack enemies by pressing left click and also can do an AOE attack by pressing E.</li>
+                <li>Viper: Can have a speed boost by pressing E. There is a cool down for this ability.</li>
+            </ul>
         </ul>
         <h2>Appendix</h2>
         <h3>Assets Used:</h3>
